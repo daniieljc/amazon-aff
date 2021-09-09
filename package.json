@@ -1,0 +1,25 @@
+{
+  "name": "amazon-aff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daniieljc/amazon-aff.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daniieljc/amazon-aff/issues"
+  },
+  "homepage": "https://github.com/daniieljc/amazon-aff#readme",
+  "dependencies": {
+    "@infosimples/node_two_captcha": "^1.1.0",
+    "colors": "^1.4.0",
+    "puppeteer": "^10.2.0",
+    "puppeteer-page-proxy": "^1.2.8"
+  }
+}
