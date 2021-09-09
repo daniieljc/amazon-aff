@@ -5,6 +5,8 @@ const readline = require('readline');
 const colors = require('colors')
 const proxy = require('puppeteer-page-proxy');
 
+const tagAmazon = 'id-aff'
+
 captcha_client = new captcha('api-key', {
     timeout: 60000,
     polling: 5000,
@@ -46,7 +48,7 @@ captcha_client = new captcha('api-key', {
 
         //BODAS
         try {
-            await page.goto('http://www.amazon.es/wedding?tag=daniieljc-21')
+            await page.goto(`http://www.amazon.es/wedding?tag=${tagAmazon}`)
             await page.waitForTimeout(1500)
             await page.click('.wedding-hero__cta')
             await page.waitForTimeout(1500)
